@@ -41,10 +41,20 @@ const config: Config = {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        blink: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
+        "scroll-bounce": {
+          "0%, 100%": { transform: "translateY(0)", opacity: "1" },
+          "50%": { transform: "translateY(6px)", opacity: "0.4" },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
         marquee: "marquee 32s linear infinite",
+        blink: "blink 1s step-end infinite",
+        "scroll-bounce": "scroll-bounce 2s ease-in-out infinite",
       },
     },
   },
