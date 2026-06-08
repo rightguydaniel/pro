@@ -64,7 +64,7 @@ export default function Hero() {
           {/* Primary CTA with sweep effect */}
           <a
             href="#projects"
-            className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-amber-glow px-7 py-3.5 font-mono text-xs uppercase tracking-widest text-ink transition-all hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(233,162,59,0.55)]"
+            className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-amber-glow px-7 py-3.5 font-mono text-xs uppercase tracking-widest text-ink transition-all hover:-translate-y-0.5 hover:shadow-[0_0_48px_rgba(251,191,36,0.65)]"
           >
             <span className="relative z-10">View work</span>
             <span className="relative z-10 transition-transform group-hover:translate-x-1">→</span>
@@ -72,7 +72,7 @@ export default function Hero() {
           </a>
           <a
             href={`mailto:${profile.email}`}
-            className="inline-flex items-center gap-2 rounded-full border border-line px-7 py-3.5 font-mono text-xs uppercase tracking-widest text-bone-dim transition-all hover:border-amber-glow/60 hover:text-bone hover:shadow-[0_0_24px_rgba(233,162,59,0.12)]"
+            className="inline-flex items-center gap-2 rounded-full border border-line px-7 py-3.5 font-mono text-xs uppercase tracking-widest text-bone-dim transition-all hover:border-violet-glow/70 hover:text-violet-glow hover:shadow-[0_0_28px_rgba(167,139,250,0.2)]"
           >
             Hire me
           </a>

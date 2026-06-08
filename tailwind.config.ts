@@ -9,20 +9,24 @@ const config: Config = {
     extend: {
       colors: {
         ink: {
-          DEFAULT: "#0e0d0b",
-          soft: "#16140f",
-          raised: "#1d1a14",
+          DEFAULT: "#09090b",
+          soft: "#111116",
+          raised: "#18181f",
         },
         bone: {
-          DEFAULT: "#f4efe6",
-          dim: "#cfc8b9",
-          faint: "#8a8474",
+          DEFAULT: "#f5f4f0",
+          dim: "#cbc5b8",
+          faint: "#7e7a72",
         },
         amber: {
-          glow: "#e9a23b",
-          deep: "#c87f1e",
+          glow: "#fbbf24",
+          deep: "#f59e0b",
         },
-        line: "#2c2820",
+        violet: {
+          glow: "#a78bfa",
+          deep: "#7c3aed",
+        },
+        line: "#27252f",
       },
       fontFamily: {
         display: ["var(--font-display)", "Georgia", "serif"],

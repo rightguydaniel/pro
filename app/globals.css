@@ -10,63 +10,66 @@ body::before {
   pointer-events: none;
   z-index: 9999;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  opacity: 0.3;
+  opacity: 0.28;
 }
 
 /* ── Ambient blobs ─────────────────────────────────────── */
 .blob {
   position: absolute;
   border-radius: 50%;
-  filter: blur(100px);
+  filter: blur(90px);
   will-change: transform;
   animation: blob-drift ease-in-out infinite;
 }
 
+/* Vivid amber — top right */
 .blob-1 {
-  width: 640px;
-  height: 640px;
-  background: radial-gradient(circle, #e9a23b, #c87f1e);
-  opacity: 0.07;
-  top: -220px;
-  right: -160px;
+  width: 680px;
+  height: 680px;
+  background: radial-gradient(circle, #fbbf24cc, #f59e0b66);
+  opacity: 0.13;
+  top: -260px;
+  right: -180px;
   animation-duration: 16s;
   animation-delay: 0s;
 }
 
+/* Deep violet — bottom left */
 .blob-2 {
-  width: 520px;
-  height: 520px;
-  background: radial-gradient(circle, #c87f1e, #e9a23b40);
-  opacity: 0.05;
-  bottom: -80px;
-  left: -180px;
+  width: 560px;
+  height: 560px;
+  background: radial-gradient(circle, #a78bfa99, #7c3aed44);
+  opacity: 0.12;
+  bottom: -120px;
+  left: -200px;
   animation-duration: 20s;
-  animation-delay: -6s;
+  animation-delay: -7s;
 }
 
+/* Small amber core — mid canvas */
 .blob-3 {
-  width: 340px;
-  height: 340px;
-  background: radial-gradient(circle, #e9a23b, transparent);
-  opacity: 0.06;
-  top: 45%;
-  left: 38%;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, #fbbf2466, transparent);
+  opacity: 0.1;
+  top: 42%;
+  left: 36%;
   animation-duration: 11s;
-  animation-delay: -10s;
+  animation-delay: -11s;
 }
 
 @keyframes blob-drift {
   0%, 100% { transform: translate(0, 0) scale(1); }
-  25%       { transform: translate(35px, -25px) scale(1.07); }
-  50%       { transform: translate(-18px, 38px) scale(0.94); }
-  75%       { transform: translate(28px, 18px) scale(1.04); }
+  25%       { transform: translate(38px, -28px) scale(1.07); }
+  50%       { transform: translate(-20px, 36px) scale(0.93); }
+  75%       { transform: translate(26px, 16px) scale(1.05); }
 }
 
 /* ── Hero grid ─────────────────────────────────────────── */
 .hero-grid {
   background-image:
-    linear-gradient(rgba(233,162,59,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(233,162,59,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(251,191,36,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(251,191,36,0.05) 1px, transparent 1px);
   background-size: 72px 72px;
 }
 

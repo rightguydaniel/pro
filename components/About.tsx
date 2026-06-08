@@ -30,7 +30,7 @@ export default function About() {
                 {certifications.map((cert) => (
                   <li
                     key={cert}
-                    className="border-l-2 border-amber-deep pl-4 font-mono text-xs leading-relaxed text-bone-dim"
+                    className="border-l-2 border-violet-glow pl-4 font-mono text-xs leading-relaxed text-bone-dim"
                   >
                     {cert}
                   </li>

@@ -32,7 +32,7 @@ export default function Contact() {
               href={profile.links.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3 font-mono text-xs uppercase tracking-widest text-bone-dim transition-colors hover:border-bone hover:text-bone"
+              className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3 font-mono text-xs uppercase tracking-widest text-bone-dim transition-all hover:border-violet-glow hover:text-violet-glow hover:shadow-[0_0_24px_rgba(167,139,250,0.2)]"
             >
               LinkedIn ↗
             </a>
@@ -40,7 +40,7 @@ export default function Contact() {
               href={profile.links.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3 font-mono text-xs uppercase tracking-widest text-bone-dim transition-colors hover:border-bone hover:text-bone"
+              className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3 font-mono text-xs uppercase tracking-widest text-bone-dim transition-all hover:border-amber-glow hover:text-amber-glow hover:shadow-[0_0_24px_rgba(251,191,36,0.2)]"
             >
               GitHub ↗
             </a>

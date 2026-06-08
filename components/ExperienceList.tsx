@@ -16,8 +16,8 @@ export default function ExperienceList() {
 
         {/* Timeline */}
         <div className="relative mt-14 pl-6 md:pl-8">
-          {/* Vertical line */}
-          <div className="absolute left-0 top-2 h-full w-px bg-gradient-to-b from-amber-glow via-amber-deep/40 to-transparent" />
+          {/* Vertical line — amber fades to violet */}
+          <div className="absolute left-0 top-2 h-full w-px bg-gradient-to-b from-amber-glow via-violet-glow/60 to-transparent" />
 
           {experience.map((job, i) => (
             <Reveal key={`${job.company}-${i}`} delay={i * 70}>
